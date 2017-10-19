@@ -14,6 +14,7 @@ class EmailParser
     parsed_emails = @emails.split(", ")
     if parsed_emails.include?(" ")
       parsed_emails.join(", ")
+      parsed_emails
   end
 end
 
