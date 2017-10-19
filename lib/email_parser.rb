@@ -11,10 +11,9 @@ class EmailParser
   end
 
   def parse
-    parsed_emails = @emails.split(", ")
-    if parsed_emails.include?(" ")
-      parsed_emails.join(", ")
-      parsed_emails
+    parsed_emails = @emails.gsub(/," ").split
+    
+        
   end
 end
 
