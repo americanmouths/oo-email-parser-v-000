@@ -12,8 +12,8 @@ class EmailParser
 
   def parse
     parsed_emails = @emails.split(/[\s,]+/)
-    dup = parsed_emails.select{|element| parsed_emails.count(element) > 1}
-    dup.uniq
+    parsed_emails.select{|element| parsed_emails.count(element) > 1}
+    parsed_emails.uniq
   end
 
 
