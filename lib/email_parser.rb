@@ -14,13 +14,13 @@ class EmailParser
     parsed_emails = @emails
     if parsed_emails.include?(", ")
       parse_emails.split(", ")
-    elsif 
+    elsif
       parsed_emails.include?(" ")
       parse_emails.split(" ")
     else
       nil
     end
-      
+
   end
 
 
