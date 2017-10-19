@@ -11,9 +11,10 @@ class EmailParser
   end
 
   def parse
-    parsed_emails = @emails.gsub(/," ").split
-    
-        
+    parsed_emails = @emails
+    parsed_emails.gsub(/," ").split
+
+
   end
 end
 
