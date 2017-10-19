@@ -13,10 +13,8 @@ class EmailParser
   def parse
     parsed_emails = @emails
     parsed_emails.gsub(/," ").split
-
-
   end
-end
+
 
 
 end
