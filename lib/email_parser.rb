@@ -12,7 +12,7 @@ class EmailParser
 
   def parse
     parsed_emails = @emails.split(/[\s,]+/)
-    parsed_emails.detect do |e| 
+    parsed_emails.detect do |e|
         parsed_emails(e) > 1
         parsed_emails(e).delete
       end
