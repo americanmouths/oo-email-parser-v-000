@@ -11,15 +11,9 @@ class EmailParser
   end
 
   def parse
-    parsed_emails = @emails
-    if parsed_emails.include?(", ")
-      parse_emails.split(", ")
-    elsif
-      parsed_emails.include?(" ")
-      parse_emails.split(" ")
-    else
-      nil
-    end
+    parsed_emails = @emails.split(/[\s,]+/)
+    #parses by comma or white space
+    #determines if email is already in email list2
 
   end
 
